@@ -16,7 +16,7 @@ function add() {
 
     // item.innerHTML = '<p class="item">' + screen.describe + '</p>';
     item.className = "item";
-    item.innerHTML = screen.describe + '<input type="checkbox" checked="checked" onclick="checkboxOnClick(screens.length - 1)" />';
+    item.innerHTML = screen.describe + '<input type="checkbox" data-index=' + (screens.length - 1) +' checked="checked" onclick="checkboxOnClick(this.dataset.index)" />';
 
     container.appendChild(item);
 
