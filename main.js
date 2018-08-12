@@ -129,7 +129,7 @@ function initObject() {
         mesh.position.x = meshWidth / 2;
         mesh.position.y = meshHeight / 2;
 
-        mesh.position.z = i * 0.3;
+        mesh.position.z = i * 0.5;
         mesh.updateMatrix();
         mesh.matrixAutoUpdate = true;
 
